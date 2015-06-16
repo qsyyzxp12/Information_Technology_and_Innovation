@@ -492,7 +492,7 @@ body{
     border-top: 1px solid #cecece;
     border-left: 1px solid #cecece;
     border-right: 1px solid #cecece;
-    height: 105%;
+    height: 36px;
     outline: none;
     padding: 0px 10px;
 }
@@ -759,6 +759,8 @@ body{
 .actForm{
     font-size: 20px;
     width: 500px;
+    margin-bottom: 20px;
+    margin-left: 30%;
 }
 
 .actForm input{
@@ -767,6 +769,114 @@ body{
     width: 300px;
     border: 1px solid #cecece;
     margin-bottom: 10px;
+    padding: 9px;
+}
+
+.actFormTitle
+{
+    font-size: 25px;
+    font-style: bolder;
+    margin-left: 40%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.actFormDate
+{
+    font-size: 20px;
+    width: 1000px;
+    margin-left: 18%;
+}
+
+.actFormDate input{
+    outline: none;
+    height: 22px;
+    width: 60px;
+    border: 1px solid #cecece;
+    margin-bottom: 20px;
+    padding: 9px;
+}
+
+.actFormType
+{
+    margin-left: 355px;
+    font-size: 20px;
+    width: 500px;
+    margin-bottom: 25px;
+}
+
+.actFormType select
+{
+    height: 28px;
+    width: 150px;
+    font-size: 18px;
+}
+
+.actFormUpload
+{
+    margin-left: 240px;
+    font-size: 20px;
+    width: 500px;
+    margin-bottom: 25px;
+}
+
+.actFormUpload input{
+    font-size: 14px;
+    outline: none;
+    height: 30px;
+    width: 80px;
+    border: 1px solid #cecece;
+}
+
+.actFormNum
+{
+    margin-left: 320px;
+    font-size: 20px;
+    width: 500px;
+    margin-bottom: 25px;
+}
+
+.actFormNum input
+{
+    outline: none;
+    height: 18px;
+    width: 60px;
+    border: 1px solid #cecece;
+    padding: 9px;
+}
+
+.actFormValue
+{
+    margin-left: 305px;
+    font-size: 20px;
+    width: 500px;
+    margin-bottom: 25px;
+}
+
+.actFormValue input
+{
+    outline: none;
+    height: 18px;
+    width: 80px;
+    border: 1px solid #cecece;
+    padding: 9px;
+}
+
+.actFormArrDate
+{
+    margin-left: 270px;
+    font-size: 20px;
+    width: 500px;
+    margin-bottom: 25px;
+}
+
+.actFormArrDate input
+{
+    outline: none;
+    height: 22px;
+    width: 60px;
+    border: 1px solid #cecece;
+    margin-bottom: 20px;
     padding: 9px;
 }
 
@@ -1114,18 +1224,20 @@ body{
 
 .actButton{
     font-size: 20px;
-    float: right;
-    width: 132px;
+    margin-left: 350px;
+    width: 264px;
 }
 .actButton input{
     outline: none;
-    height: 74px;
-    width: 132px;
+    height: 34px;
+    width: 264px;
     background-color: #ededed;
     color: #515151;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
+    margin-top: 50px;
     font-size: 17px;
     cursor: pointer;
+    border: 1px solid gray;
 }
 
 .actButton input:hover{
