@@ -43,9 +43,9 @@ textarea{
 
 .companyDetailDiv .detail
 {
-    width: 80%;
+    width: 90%;
     margin-left: 10%;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
 }
 
 .companyDetailDiv .field
@@ -56,20 +56,19 @@ textarea{
 
 .companyDetailDiv .field .key
 {
-    width: 25%;
+    width: 18%;
     float: left;
 }
 
 .companyDetailDiv .field .value
 {
-    width: 60%;
+    width: 75%;
     float: left;
 }
 .companyDetailDiv .field .textarea
 {
     margin-top: 20px;
-    margin-left: 10%;
-    width: 80%;
+    width: 100%;
     word-wrap: break-word;
     word-break: normal;
 }
@@ -86,6 +85,36 @@ textarea{
     text-align: center;
     background-color: lightgray;
     margin-top: 30px;
+}
+
+.companyDetailDiv .fieldTab
+{
+    margin-left: 5%;
+    min-height: 30px;
+    width: 100%;
+}
+
+.companyDetailDiv .fieldTab .key
+{
+    width: 18%;
+    float: left;
+}
+
+.companyDetailDiv .fieldTab .value
+{
+    width: 75%;
+    float: left;
+}
+.companyDetailDiv .fieldTab .valueFile
+{
+    width: 3%;
+    float: left;
+}
+.companyDetailDiv .fieldTab .file
+{
+    color: lightblue;
+    text-decoration: underline;
+
 }
 
 .allActDiv
