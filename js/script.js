@@ -7,4 +7,8 @@ $(document).ready(function(){
 		else;
 
 	});
+
+	$('.actInfo select').change(function(){
+		window.location.href = $(this).val();
+	});
 });
