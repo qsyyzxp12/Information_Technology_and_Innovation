@@ -21,6 +21,80 @@ textarea{
 }
 
 
+.allActDiv
+{
+    width: 100%;
+}
+
+.allActDiv .actEntry
+{
+    float: left;
+    height: 120px;
+    width: 240px;
+    border: 1px solid lightgray;
+    overflow: hidden;
+    margin-left: 6%;
+    margin-bottom: 20px;
+    background-color: blue;
+}
+
+.allActDiv .actEntry .content
+{
+    height: 100%;
+    width: 200%;
+    margin-left: -100%;
+    transition: 0.5s ease-out;
+}
+
+.allActDiv .actEntry .content:hover
+{
+    margin-left: 0%;
+}
+
+.allActDiv .actEntry .content a
+{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.allActDiv .actEntry .content .waiting
+{
+    background-image: url('../images/activities/status/waiting.png');
+}
+
+.allActDiv .actEntry .content .ing
+{
+    background-image: url('../images/activities/status/ing.png');
+}
+
+.allActDiv .actEntry .content .report
+{
+    background-image: url('../images/activities/status/report.png');
+}
+
+.allActDiv .actEntry .content .check
+{
+    background-image: url('../images/activities/status/check.png');
+}
+
+.allActDiv .actEntry .content .end
+{
+    background-image: url('../images/activities/status/end.png');
+}
+
+.allActDiv .actEntry .content .status a
+{
+    height: 100%;
+    width: 100%;
+}
+
+.allActDiv .actEntry .content img
+{
+    float: right;
+    width: 50%;
+    height: 100%;
+}
 
 .findActDiv
 {
@@ -62,10 +136,119 @@ textarea{
     height: 100%;
     width: 50%;
 }
-/*.findActDiv:hover
+
+.filter
 {
-    width:200px;
-}*/
+    margin-left: 1px;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 12px;
+    width: 100px;
+    height: 30px;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    float: left;
+    transition: 0.1s ease-out;
+}
+.filter a
+{
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+
+.filter:hover
+{
+    margin-top: 4px;
+    height: 48px;
+}
+
+.actInfo
+{
+    font-size: 20px;
+    height: 50px;
+}
+
+.actInfo .select
+{
+    float: left;
+}
+
+.actInfo select
+{
+    height: 30px;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.actInfo .status
+{
+    height: 30px;
+    margin-top: 14px;
+    margin-left: 130px;
+    float: left;
+}
+
+.actInfo .button
+{
+    float: left;
+    margin-left: 180px;
+    margin-top: 8px;
+    height: 40px;
+}
+
+.actInfo .button a
+{
+    float: right;
+    height: 20px;
+    padding: 5px 5px;
+    border: 1px solid gray;
+    text-decoration: none;
+    color: black;
+}
+
+.actInfo .button a:hover
+{
+    background-color: red;
+    color: white;
+}
+
+.chooseCompDiv
+{
+    margin-top: 20px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.chooseCompDiv .info
+{
+    margin-left: 140px;
+}
+
+.chooseCompDiv label
+{
+    border-bottom: 1px solid black;
+
+}
+.chooseCompDiv select
+{
+    height: 25px;
+    font-size: 20px;
+    width: 50px;
+}
+
+.chooseCompDiv a
+{
+    border: 1px solid gray;
+    text-decoration: none;
+    margin-left: 50px;
+    font-size: 20px;
+    padding: 2px 13px;
+
+}
 
 .findCompDiv
 {
@@ -180,23 +363,23 @@ body{
     height: 6px;
 }
 .header{
-    min-height: 72px;
-    position: relative;
+    margin-top: 40px;
+    height: 110px;
 }
 .logo{
-    position: absolute;
     height: 63px;
     width: 187px;
     background: url('../images/logo.png') no-repeat;
     top: -7px;
     left: 14px;
+    float: left;
 }
 .logo a{
     display: block;
     height: 100%;
 }
 .social{
-    float: right;
+    float: left;
     overflow: hidden;
     padding-top: 12px;
     margin-left: 4px;
@@ -213,28 +396,46 @@ body{
 }
 /*menu main*/
 .menuContainer{
-    margin-left: 215px;
+    margin-left: 100px;
     margin-top: 30px;
+    width: 516px;
+    float: left;
 }
-.menuContainer>ul.menu{
+
+.menuContainer .firstLine
+{
+    width: 100%;
+    height: 43px;
+}
+
+.menuContainer .secLine
+{
+    width: 100%;
+    height: 34px;
+    overflow: hidden;
+}
+
+
+.menuContainer .firstLine>ul.menu{
     float: right;
+    margin-right: 30px;
     font-size: 15px;
 }
-.menuContainer>ul.menu>li{
+.menuContainer .firstLine>ul.menu>li{
     float: left;
     position: relative;
     margin-right: 7px;
     color: black;
 }
-.menuContainer>ul.menu>li>a{
+.menuContainer .firstLine>ul.menu>li>a{
     text-transform: uppercase;
     padding: 14px 10px;
 }
-.menuContainer>ul.menu>li:hover>a{
+.menuContainer .firstLine>ul.menu>li:hover>a{
     background-color: #eeeeee;
 }
-.menuContainer>ul.menu>li.menuactive>a,
-.menuContainer>ul.menu>li>a:hover{
+.menuContainer .firstLine>ul.menu>li.menuactive>a,
+.menuContainer .firstLine>ul.menu>li>a:hover{
     background-color: #fe5113;
     color: white;
 }
@@ -473,14 +674,12 @@ body{
 
 .titleContainer{
     border-bottom: 1px dotted #fe5113;
-    height: 29px;
 }
 .titleContainer .title{
     border-bottom: 5px solid #fe5113;
     text-transform: uppercase;
     float: left;
     position: relative;
-    height: 24px;
     padding-top: 1px;
     font-size: 16px;
     color: #161616;
@@ -492,7 +691,7 @@ body{
     border-top: 1px solid #cecece;
     border-left: 1px solid #cecece;
     border-right: 1px solid #cecece;
-    height: 36px;
+    height: 0px;
     outline: none;
     padding: 0px 10px;
 }
@@ -508,7 +707,6 @@ body{
 }
 .titleContainer.titlePage{
     height: 43px;
-    padding-top: 39px;
     margin-bottom: 35px;
 }
 .titleContainer.titlePage .title{
@@ -962,248 +1160,6 @@ body{
     height: 95px;
     overflow-y: scroll;
     word-wrap:break-word;
-}
-
-.myPagediv
-{
-    width: 90%;
-    margin-left: 5%;
-    margin-bottom: 20px;
-}
-
-.myPagediv .userDataDiv
-{
-    height: 200px;
-    margin-left: 5%;
-}
-.myPagediv .editUserDataDiv
-{
-    height: 450px;
-    margin-left: 5%;
-}
-.nameAndEditDiv
-{
-    width: 70%;
-    float: right;
-    height: 100%;
-}
-
-.nameDiv
-{
-    float: top;
-    height: 50%;
-    margin-top: 8%;
-    font-size: 40px;
-}
-
-.editButtonDiv
-{
-    float: bottom;
-    height: 42%;
-}
-
-.editButton
-{
-    height: 40px;
-    width: 80px;
-    font-size: 20px;
-    margin-left: 10px;
-}
-
-.photoDiv
-{
-    width: 30%;
-    height: 100%;
-    float: left;
-}
-
-.editItemDiv
-{
-    height: 50px;
-    width: 500px;
-    font-size: 20px;
-    margin-bottom: 5px;
-    margin-left: 10px;
-}
-.editItemDiv .title
-{
-    float: left;
-    height: 20px;
-    width: 90px;
-    padding: 15px 15px;
-}
-.editDiv
-{
-    height: 100%;
-    width: 60%;
-    float: left;
-}
-.editSubmitDiv input
-{
-    margin-left: 130px;
-    height: 30px;
-    width: 320px;
-    font-size: 20px;
-}
-.editItemDiv input
-{
-    outline: none;
-    height: 28px;
-    width: 300px;
-    border: 1px solid #cecece;
-    margin-bottom: 10px;
-    padding: 9px;
-}
-
-.photo
-{
-    width: 200px;
-    height: 200px;
-} 
-
-.editPhotoButton
-{
-    margin-top: 3px;
-    width: 200px;
-    height: 30px;
-    font-size: 20px;
-}
-
-.myPagediv .myPageOpts
-{
-    margin-top: 30px;
-    height: 50px;
-    width: 100%;
-}
-
-.myPagediv .myPageOpts>ul.menu{
-    list-style: none;
-    font-size: 15px;
-    height: 50px;
-    width: 104.3%;
-    outline: 3px;
-}
-.myPagediv .myPageOpts>ul.menu>li.unselected{
-    border: 3px outset gray;
-    float: left;
-    position: relative;
-    width: 19%;
-    height: 40px;
-    text-align: center;
-}
-
-.myPagediv .myPageOpts>ul.menu>li.selected{
-    border: 2px inset gray;
-    border-bottom: 0px; 
-    float: left;
-    position: relative;
-    width: 19%;
-    height: 40px;
-    text-align: center;
-}
-
-.myPagediv .myPageOpts>ul.menu>li>a{
-    text-transform: uppercase;
-    text-decoration:none;
-    color: black;
-    padding: 14px 10px;
-    display: table-cell;
-    width: 150px;
-    vertical-align: middle;
-}
-.myPagediv .myPageOpts>ul.menu>li:hover{
-    background-color: #fe5113;
-}
-.myPagediv .myPageOpts>ul.menu>li>a:hover{
-    color: white;
-}
-
-.myPagediv .calendarDate
-{
-    margin-left: 42%;
-    font-size: 18px;
-    margin-bottom: 5px;
-}
-
-.myPagediv table
-{
-    text-align: center;
-    width: 100%;
-    height: 500px;
-    font-size: 18px;
-    border: 1px solid lightgray;
-}
-
-.myPagediv table .title
-{
-    background-color: lightgray;
-    height: 40px;
-}
-
-.myPagediv table .gray
-{
-    color: lightgray;
-}
-
-.myPagediv table .red
-{
-    color: red;
-}
-
-.myPagediv table .selected
-{
-    background-color: #fe5113;
-    color: white;
-}
-
-.calendarDetail
-{
-    width: 200px;
-    height: 200px;
-    background-color: white;
-    border: 1px solid black;
-    position: absolute;
-    font-size: 12px;
-}
-
-.calendarDetail td
-{
-    height: 20px;
-    border-bottom: 1px solid lightgray; 
-}
-
-.calendarDetail .time
-{
-    text-align: center;
-    width: 30%;
-}
-
-.calendarDetail .act
-{
-    text-align: center;
-    width: 70%;
-}
-
-.calendarDetail .actSelected
-{
-    background-color: #fe5113;
-    text-align: center;
-    width: 70%;
-}
-
-.calendarDetail .actSelected a
-{
-    color: white;
-    text-transform: uppercase;
-    text-decoration:none;
-    padding: 0px 23px;
-    display: table-cell;
-}
-
-.myPageDotLine
-{
-    border-bottom: 1px dotted #fe5113;
-    height: 20px;
 }
 
 .actFormMessage span{
