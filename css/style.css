@@ -20,11 +20,10 @@ textarea{
 	clear:both;
 }
 
-
 .allActDiv
 {
     width: 100%;
-    min-height: 400px;
+    min-height: 300px;
 }
 
 .allActDiv .numOfComp
@@ -114,7 +113,7 @@ textarea{
     text-align: center;
 }
 
-.allActDiv .actEntry .content .company .info
+.allActDiv .actEntry .content .company .detail
 {
     width: 100%;
     height: 16px;
@@ -272,6 +271,7 @@ textarea{
 .chooseCompDiv .info
 {
     margin-left: 140px;
+    margin-bottom: 30px;
 }
 
 .chooseCompDiv label
@@ -286,13 +286,14 @@ textarea{
     width: 50px;
 }
 
-.chooseCompDiv a
+.chooseCompDiv .goButton
 {
     border: 1px solid gray;
     text-decoration: none;
     margin-left: 50px;
     font-size: 20px;
     padding: 2px 13px;
+    background-color: white;
 
 }
 
