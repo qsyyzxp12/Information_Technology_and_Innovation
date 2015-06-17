@@ -24,6 +24,7 @@ textarea{
 .allActDiv
 {
     width: 100%;
+    min-height: 400px;
 }
 
 .allActDiv .actEntry
@@ -35,7 +36,6 @@ textarea{
     overflow: hidden;
     margin-left: 6%;
     margin-bottom: 20px;
-    background-color: blue;
 }
 
 .allActDiv .actEntry .content
