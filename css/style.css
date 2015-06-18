@@ -89,6 +89,7 @@ textarea{
 
 .companyDetailDiv
 {
+    font-size: 25px;
     width: 100%;
     margin-bottom: 30px;
     border: 1px solid lightgray;
@@ -232,6 +233,13 @@ textarea{
     border: 1px solid gray;
     padding: 8px;
     margin-left: 20px;
+}
+
+.companyDetailDiv .field .desc
+{
+    margin-top: 15px;
+    width: 90%;
+    margin-left: 5%;
 }
 
 .companyDetailDiv .field .waiting
@@ -1498,6 +1506,30 @@ body{
     width: 80px;
     border: 1px solid #cecece;
     padding: 9px;
+}
+
+.actFormDescTitle
+{
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.actFormDesc
+{
+    margin-top: 10px;
+    width: 60%;
+    margin-left: 20%;
+    height: 150px;
+}
+
+.actFormDesc textarea
+{
+    padding: 8px 8px;
+    font-size: 18px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid gray;
 }
 
 .actFormArrDate
