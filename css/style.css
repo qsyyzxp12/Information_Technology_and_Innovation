@@ -247,7 +247,7 @@ textarea{
     display: block;
     height: 30px;
     width: 50%;
-    margin-left: 25%;
+    margin-left: 22%;
     border: 1px solid gray;
     text-decoration: none;
     color: black;
@@ -656,6 +656,30 @@ textarea{
     color: white;
 }
 
+.allActDiv .info
+{
+    font-size: 25px;
+    margin-left: 140px;
+    margin-bottom: 30px;
+}
+
+.allActDiv select
+{
+    height: 25px;
+    font-size: 20px;
+    width: 50px;
+}
+
+.allActDiv .goButton
+{
+    border: 1px solid gray;
+    text-decoration: none;
+    margin-left: 50px;
+    font-size: 20px;
+    padding: 2px 13px;
+    background-color: white;
+}
+
 .chooseCompDiv
 {
     margin-top: 20px;
@@ -676,6 +700,7 @@ textarea{
     border-bottom: 1px solid black;
 
 }
+
 .chooseCompDiv select
 {
     height: 25px;
@@ -691,7 +716,6 @@ textarea{
     font-size: 20px;
     padding: 2px 13px;
     background-color: white;
-
 }
 
 .findCompDiv
