@@ -20,6 +20,63 @@ textarea{
 	clear:both;
 }
 
+.endPageDiv
+{
+    width: 100%;
+    margin-top: 30px;
+    height: 300px;
+}
+
+.endPageDiv .buttonEntry
+{
+    float: left;
+    width: 400px;
+    height: 200px;
+    margin-left: 50px;
+    overflow: hidden;
+}
+
+.endPageDiv .buttonEntry .content
+{
+    width: 200%;
+    height: 100%;
+    margin-left: -100%;
+    transition: 0.5s ease-out;
+}
+
+.endPageDiv .buttonEntry .content a
+{
+    display: block;
+    height: 100%;
+    width: 50%;
+    float: left;
+    background-image: url('../images/backgrounds/borderline.png');
+    text-decoration: none;
+}
+
+.endPageDiv .buttonEntry .content a .title
+{
+    height: 80px;
+    width: 100%;
+    margin-top: 60px;
+    background-color: lightgray;
+    font-size: 70px;
+    text-align: center;
+    color: black;
+}
+
+.endPageDiv .buttonEntry .content img
+{
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+
+.endPageDiv .buttonEntry .content:hover
+{
+    margin-left: 0%;
+}
+
 .reportDiv
 {
     margin-top: 30px;
@@ -487,6 +544,7 @@ textarea{
     float: left;
     transition: 0.1s ease-out;
 }
+
 .filter a
 {
     display: block;
@@ -761,6 +819,11 @@ body{
     overflow: hidden;
 }
 
+.menuContainer .secLine .selected
+{
+    margin-top: 4px;
+    height: 48px;
+}
 
 .menuContainer .firstLine>ul.menu{
     float: right;
