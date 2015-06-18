@@ -459,6 +459,18 @@ textarea{
     margin-top: 20px;
     font-size: 24px;
     padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: lightgray;
+    color: black;
+    text-align: center;
+}
+
+.allActDiv .actEntry .content .company .info
+{
+    width: 100%;
+    height: 20px;
+    font-size: 18px;
+    padding-bottom: 5px;
     background-color: lightgray;
     color: black;
     text-align: center;
@@ -495,7 +507,6 @@ textarea{
     float: left;
     height: 460px;
     width: 465px;
-    background-color: red;
     margin-bottom: 30px;
     margin-top: 30px;
     overflow: hidden;
@@ -505,9 +516,9 @@ textarea{
 {
     height: 100%;
     width: 200%;
-    background-color: yellow;
     margin-left: -100%;
     transition: margin-left 0.5s ease-out;
+
 }
 
 .ImgAndA:hover
@@ -518,15 +529,36 @@ textarea{
 .ImgAndA a
 {
     float: left;
-    background-color: purple;
+    background-image: url('../images/backgrounds/borderline.png');
     height: 100%;
     width: 50%;
+    text-decoration: none;
+}
+
+.ImgAndA a .firstLine
+{
+    background-color: lightgray;
+    width: 100%;
+    height: 15%;
+    margin-top: 35%;
+    color: black;
+    font-size: 60px;
+    text-align: center;
+}
+
+.ImgAndA a .secLine
+{
+    background-color: lightgray;
+    width: 100%;
+    height: 15%;
+    color: black;
+    font-size: 60px;
+    text-align: center;
 }
 
 .ImgAndA img
 {
     float: left;
-    background-color: orange;
     height: 100%;
     width: 50%;
 }
@@ -659,7 +691,6 @@ textarea{
     float: left;
     height: 460px;
     width: 465px;
-    background-color: blue;
     margin-left: 30px;
     margin-bottom: 30px;
     margin-top: 30px;
