@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <title>贊助媒合平台</title>
+        
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+    </head>
+    <body class="font3">
+        <div class="wrapper">
+            <div class="header"><!-- HEADER START -->
+                <div class="logo">
+                    <a href="index.html"></a>
+                </div>
+                <div class="menuContainer">
+                    <div class="firstLine">
+                        <ul class="menu font1">
+                            <li class="menuactive">
+                                <a id="myPage" href="myPage.html">我的頁面</a>
+                            </li>
+                            <li>
+                                <a href="findCompPage.html">找贊助</a>
+                            </li>
+                            <li>
+                                <a href="index.html">登出</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="secLine" >
+                        <div class="filter"><a href="myPage_waiting_only.html">待媒合</a></div>
+                        <div class="filter"><a href="myPage_ing_only.html">媒合中</a></div>
+                        <div class="filter"><a href="myPage_report_only.html">待回報</a></div>
+                        <div class="filter"><a href="myPage_check_only.html">待審查</a></div>
+                        <div class="filter"><a href="myPage_end_only.html">已完成</a></div>
+                    </div>
+                </div>
+                <div class="social">
+                    <a href="#">
+                        <img src="images/social/facebook.png" alt="facebook" />
+                    </a>
+                    <a href="#">
+                        <img src="images/social/twitter.png" alt="twitter" />
+                    </a>
+                    <a href="#">
+                        <img src="images/social/dribble.png" alt="dribble" />
+                    </a>
+                </div>
+            </div><!-- HEADER END -->
+        </div>
+        <div id="contents"><!-- CONTENTS START -->
+            <div class="wrapper">
+            	<div class="titleContainer titlePage">
+                    <div class="title">
+                        <div class="actForm">
+                        </div>
+                    </div>
+                </div>
+                <div class="actInfo">
+                    <div class="select">
+                        活動：
+                        <select>
+                            <option value="NerdsWar.html">第七屆七校聯賽Nerds' War</option>
+                            <option value="freeride.html">下坡先修班</option>
+                            <option value="cypher.html" selected>小福Cypher</option>
+                            <option value="oldSchool.html">OLD SCHOOL兩社聯合成發展</option>
+                            <option value="pushCircle.html">Pushing Full Circle - Taiwan</option>
+                        </select>
+                    </div> 
+                    <div class="status"> [ 待回報 ] </div>
+                    <div class="button">
+                        <a href="NerdsWarInfo.html">活動資訊</a>
+                    </div>
+                    <div class="compSelect">
+                        贊助商：
+                        <select>
+                            <option value="">多喝水</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="companyDetailDiv reportDiv fontSize24">
+                    <div class="img"><img src="images/company/drinkMoreWater.png"></div>
+                    <div class="detail">
+                            <div class="field">
+                                <div class="reportPage_key">贊助報告</div>
+                                <div class="report_value">： __________________</div>
+                                <a class="uploadButton" href="" onclick="return false;">上傳</a>
+                            </div>
+                            <div class="field">
+                                <div class="reportPage_key">商品數量誤差比</div>
+                                <div class="value">
+                                    <form action="cypher_sent.html">：<input class="ErrorInput" type="text" name="">％
+                                </div>
+                                <div class="explain">( 誤差數 / 應到總數，數字可正可負 )</div>
+                            </div>
+                            <div class="field">
+                                <div class="reportPage_key">準時予否</div>
+                                <div class="value">：
+                                    <input class="lateOrNotInput" type="radio" name="lateOrNot">準時 
+                                    <input class="lateOrNotInput" type="radio" name="lateOrNot">遲到
+                                    <input class="numOfLateDaysInput" type="text" name="">天
+
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="reportPage_key">實得商品名稱</div>
+                                <div class="value">
+                                    ：<input class="thingsInput" type="text" name="">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="reportPage_key">實得商品數量</div>
+                                <div class="value">
+                                    ：<input class="thingsInput" type="text" name="">
+                                    <input class="unitInput" type="text" name="" placeholder="單位">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="reportPage_key">實得商品總市值</div>
+                                <div class="value">
+                                    ：<input class="thingsInput" type="text" name=""> NT
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="reportPage_key">其他：</div>
+                                <div class="textarea">
+                                    <textarea rows="5" cols="45"></textarea>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <a class="report_status" href="" onclick="return false;">未送出</a>
+                                <input class="submitInput" type="submit" value="送出">
+                                <a class="connectButton" href="#">聯絡企業</a>
+                            </div>
+                    </div>
+                </div>                    	
+            </div>
+        </div><!-- CONTENTS END -->
+        <div class="lowerfooterbg">
+            <div class="wrapper">
+                <div class="lowerfooter">
+                    <div class="copyright textcolor10">
+                        &copy; copyright 2015 powered by <span class="textcolor">INFORMATION TECHNOLOGY AND INNOVATION GROUP SIX</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
