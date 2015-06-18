@@ -115,6 +115,12 @@ textarea{
     float: left;
 }
 
+.companyDetailDiv .field .checkPage_key
+{
+    width: 24%;
+    float: left;
+}
+
 .companyDetailDiv .explain
 {
     margin-top: 16px;
@@ -122,9 +128,15 @@ textarea{
     width: 100%;
 }
 
+.companyDetailDiv .explain2
+{
+    min-height: 30px;
+    width: 100%;
+}
+
 .companyDetailDiv .field .value
 {
-    width: 77%;
+    width: 74%;
     float: right;
 }
 
@@ -132,6 +144,7 @@ textarea{
 {
     width: 35%;
     float: left;
+    margin-left: 50px;
 }
 
 .companyDetailDiv .field .uploadButton
@@ -218,6 +231,20 @@ textarea{
     text-decoration: none;
     float: left;
     color: gray;
+    text-align: center;
+    background-color: lightgray;
+}
+
+.companyDetailDiv .field .check_ok
+{
+    display: block;
+    height: 30px;
+    width: 160px;
+    margin-left: 8%;
+    border: 1px solid gray;
+    text-decoration: none;
+    float: left;
+    color: black;
     text-align: center;
     background-color: lightgray;
 }
