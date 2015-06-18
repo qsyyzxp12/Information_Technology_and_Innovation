@@ -90,42 +90,53 @@
                                 <div class="value">
                                     <div class="valueFile">： </div>
                                     <div class="file">NerdsWar企劃書.docx</div>
+                                    <a class="uploadButton" href="" onclick="return false;">上傳</a>
                                 </div>
                             </div>
                             <div class="field">
                                 <div class="reportPage_key">商品數量誤差比</div>
-                                <div class="value">：+10 ％ </div>
-                                <div class="explain"> (&nbsp;誤差數 / 應到總數，數字可正可負 )</div>
+                                <div class="value">
+                                    <form action="cypher_sent.html">：<input class="ErrorInput" type="text" name="" placeholder="+10">％
+                                </div>
                             </div>
+                            <div class="explain">( 誤差數 / 應到總數，數字可正可負 )</div>
                             <div class="field">
                                 <div class="reportPage_key">準時予否</div>
-                                <div class="value">：遲到 1 天 </div>
+                                <div class="value">：
+                                    <input class="lateOrNotInput" type="radio" name="lateOrNot">準時 
+                                    <input class="lateOrNotInput" type="radio" name="lateOrNot" checked>遲到
+                                    <input class="numOfLateDaysInput" type="text" name="" placeholder="1">天
+
+                                </div>
                             </div>
                             <div class="field">
                                 <div class="reportPage_key">實得商品名稱</div>
                                 <div class="value">
-                                    ：竹炭水寶特瓶裝600c.c.
+                                    ：<input class="thingsInput" type="text" name="" placeholder="竹炭水寶特瓶裝600c.c.">
                                 </div>
                             </div>
                             <div class="field">
                                 <div class="reportPage_key">實得商品數量</div>
-                                <div class="value">：220 瓶 </div>
-                            </div>
-                            <div class="field">
-                                <div class="reportPage_key">實得商品總市值</div>
-                                <div class="value">：4400 NT </div>
-                            </div>
-                            <div class="field">
-                                <div class="reportPage_key">其他：</div>
-                            </div>
-                            <div class="field">
-                                <div class="textarea">
-                                    &nbsp; &nbsp; &nbsp;慷慨且友善，給我們很愉快的合作經驗。
+                                <div class="value">
+                                    ：<input class="thingsInput" type="text" name="" placeholder="220">
+                                    <input class="unitInput" type="text" name="" placeholder="瓶">
                                 </div>
                             </div>
                             <div class="field">
-                                <a class="report_status" href="" onclick="return false;">等待企業確認</a>
-                                <form action="cypher_edit.html"><input class="submitInput" type="submit" value="編輯"></form>
+                                <div class="reportPage_key">實得商品總市值</div>
+                                <div class="value">
+                                    ：<input class="thingsInput" type="text" name="" placeholder="4400"> NT
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="reportPage_key">其他：</div>
+                                <div class="textarea">
+                                    <textarea rows="5" cols="45">&nbsp; &nbsp; &nbsp;慷慨且友善，給我們很愉快的合作經驗。</textarea>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <a class="report_status" href="" onclick="return false;">等待企業回覆</a>
+                                <input class="submitInput" type="submit" value="完成編輯">
                                 <a class="connectButton" href="#">聯絡企業</a>
                             </div>
                     </div>

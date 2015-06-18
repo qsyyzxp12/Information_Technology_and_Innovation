@@ -67,8 +67,8 @@ textarea{
 .companyDetailDiv .field .ErrorInput
 {
     border: 1px solid gray;
-    height: 30px;
-    padding: 2px;
+    height: 25px;
+    padding: 6px 6px;
     width: 50px;
     margin-right: 10px;
     margin-left: 5px;
@@ -84,7 +84,7 @@ textarea{
 {
     width: 50px;
     border: 1px solid gray;
-    padding: 2px;
+    padding: 6px 6px;
     margin-right: 5px;
     height: 25px;
 }
@@ -93,14 +93,14 @@ textarea{
 {
     width: 300px;
     border: 1px solid gray;
-    padding: 2px;
+    padding: 6px 6px;
 }
 
 .companyDetailDiv .field .unitInput
 {
     width: 70px;
     border: 1px solid gray;
-    padding: 2px;
+    padding: 6px 6px;
 }
 
 .companyDetailDiv .field .key
@@ -115,9 +115,10 @@ textarea{
     float: left;
 }
 
-.companyDetailDiv .field .explain
+.companyDetailDiv .explain
 {
-    margin-top: 15px;
+    margin-top: 16px;
+    min-height: 30px;
     width: 100%;
 }
 
@@ -283,6 +284,7 @@ textarea{
     color: lightblue;
     text-decoration: underline;
     margin-left: 25px;
+    float: left;
 }
 
 .allActDiv
